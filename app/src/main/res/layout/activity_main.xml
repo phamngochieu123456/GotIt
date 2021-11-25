@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_input"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/orctest">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bt_rec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recognize"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp">
+        </Button>
+
+        <Button
+            android:id="@+id/bt_insert_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert Image"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp">
+        </Button>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Result"
+        android:textSize="20dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:layout_gravity="center">
+    </TextView>
+
+</LinearLayout>
